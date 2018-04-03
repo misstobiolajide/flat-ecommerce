@@ -1,0 +1,89 @@
+body{
+	font-family: arial;
+}
+
+.logo-main img {
+    width: 100%;
+}
+.logo-main a {
+    position: fixed;
+    top: 0;
+    display: inline-block;
+    width: 260px;
+}
+.item img {
+    width: 100%;
+}
+.home-carousel {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.home-carousel .item img {
+    width: 90%;
+    margin-left: 15px;
+}
+.slide-caption {
+    position: fixed;
+    top: 50px;
+    right: -40px;
+    transform: rotate(90deg);
+    font-size: 16px;
+}
+.owl-dots {
+    display: none;
+}
+.number-nav {
+    padding-left: 5%;
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+}
+.number-nav a {
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    margin-right: 4px;
+}
+.number-nav a:hover, .number-nav a:active, .number-nav a:focus{
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 15px;
+}
+.copyright-area {
+    position: fixed;
+    right: -100px;
+    transform: rotate(90deg);
+    top: 130px;
+    font-size: 12px;
+}
+section.footer {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    bottom: 0;
+}
+.footer .navbar-default{
+	background: transparent;
+	border: none;
+	margin-bottom: 0px;
+}
+.footer .nav.navbar-nav{
+	display: inline-block;
+	width: 100%;
+}
+.footer .nav li a{
+	text-transform: uppercase;
+}
+
+.footer .nav li:nth-child(5), .footer .nav li:nth-child(4), .footer .nav li:nth-child(3){
+	float: right;
+}
+
+
+/*ABOUT POGE BEGINS*/
+
+.about-area {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15%;
+}
