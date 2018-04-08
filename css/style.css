@@ -7,6 +7,16 @@
 body{
 	font-family: arial;
 }
+
+.header{
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    background: #fff;
+    z-index: 999;
+    padding-bottom: 10px;
+}
+
 .logo-main a {
     
 }
@@ -14,7 +24,7 @@ body{
     width: 100%;
 }
 .logo-main a {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     width: auto;
     z-index: 5;
@@ -67,7 +77,12 @@ body{
 .copyright-area {
     position: fixed;
     right: -110px;
-    transform: rotate(90deg);
+/*    transform: rotate(90deg);*/
+transform: rotate(90deg) ;
+-webkit-transform: rotate(90deg) ;
+-moz-transform: rotate(90deg) ;
+-o-transform: rotate(90deg) ;
+-ms-transform: rotate(90deg);
     top: 130px;
     font-size: 13px;
 }
@@ -78,7 +93,7 @@ section.footer {
     bottom: 0;
 }
 .footer .navbar-default{
-	background: transparent;
+	background: #fff;
 	border: none;
 	margin-bottom: 0px;
 }
@@ -327,7 +342,6 @@ h5.check-cost {
 	    display: contents;
 	}
 	.navbar-collapse {
-	    background: #cccddd;
 	    color: #fff !important;
 	}
 }
