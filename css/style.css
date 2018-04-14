@@ -32,9 +32,10 @@ body{
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 16px;
     margin-top: 10px;
     letter-spacing: 6px;
+    font-weight: bold;
 }
 .item img {
     width: 100%;
@@ -49,10 +50,12 @@ body{
 }
 .slide-caption {
     position: absolute;
-    top: 16%;
-    right: -60px;
+    top: 27%;
+    /*right: -60px;*/
+    right: -45px;
     transform: rotate(90deg);
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 13px;
 }
 .owl-dots {
     display: none;
@@ -65,14 +68,16 @@ body{
 }
 .number-nav a {
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     color: #000;
     margin-right: 4px;
-}
-.number-nav a:hover, .number-nav a:active, .number-nav a:focus{
-	font-weight: bold;
 	text-decoration: none;
-	font-size: 15px;
+}
+/*.number-nav a:hover, .number-nav a.active, .number-nav a:focus{*/
+.number-nav a.active{
+    font-weight: bold;
+    text-decoration: none;
+	/*font-size: 15px;*/
 }
 .copyright-area {
     position: fixed;
@@ -184,19 +189,21 @@ section.footer {
 }
 .stuff-size ul li a {
     color: #000;
-    font-weight: 600;
+    /*font-weight: 600;*/
 }
 
 a.purchase-btn {
-    background: #000;
+background: #000;
     display: inline-block;
     font-size: 16px;
     color: #fff;
     padding: 5px 20px;
-    border-radius: 2px;
+    /* border-radius: 0px; */
     text-decoration: none;
     margin-bottom: 70px;
     margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .description h5 {
     font-size: 16px;
@@ -221,6 +228,8 @@ a.purchase-btn {
     font-weight: 500;
     margin-left: 40px;
     margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 /*PRODUCTS INNER PAGE ENDS*/
 
@@ -256,8 +265,9 @@ a.purchase-btn {
 .video-tab {
     display: inline-block;
     width: 100%;
-    min-height: 500px;
     vertical-align: middle;
+    margin-bottom: 20px;
+    border: 1px solid;
 }
 .video-tab img {
     width: auto;
@@ -333,6 +343,20 @@ h5.check-cost {
     margin: 20px 0px 0px;
     font-size: 14px;
 }
+
+
+.product-gallery .owl-next, .product-gallery .owl-prev{outline: none}
+.product-gallery .owl-next span, .product-gallery .owl-prev span {
+    font-size: 30px;
+    color: #000;
+    outline: none;
+}
+.product-gallery .owl-nav [class*=owl-]:hover {
+        background: transparent;
+    color: #e6e7e9;
+    text-decoration: none;
+}
+
 
 /*MEDIA QUERIES*/
 @media (max-width: 768px){

@@ -51,14 +51,22 @@
 						<div class="collection-item">
 							<div class="collection-video">
 								<div class="video-tab">
-									<video width="100%" controls>
+									<video width="100%" id="cl_video">
 									  <source src="https://vimeo.com/channels/thebvv/119811742" type="video/mp4">
 									  <source src="https://vimeo.com/channels/thebvv/119811742" type="video/ogg">
 									  Your browser does not support HTML5 video.
 									</video>
 
 								</div>
+
+								<div class="col-sm-12">
+
+								<ul class="list-inline pull-left">
+									<a href="javascript:;" onclick="document.getElementById('cl_video').play();"><span class="glyphicon glyphicon-play"></span></a>
+									<a href="javascript:;" onclick="document.getElementById('cl_video').pause();"><span class="glyphicon glyphicon-pause"></span></a>
+								</ul>
 								<a href="#" class="pull-right">Exit</a>
+								</div>
 							</div>
 						</div>
 					</div>
