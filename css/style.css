@@ -50,11 +50,11 @@ body{
 }
 .slide-caption {
     position: absolute;
-    top: 27%;
-    /*right: -60px;*/
-    right: -45px;
+    top: 19%;
+    /* right: -60px; */
+    right: -30px;
     transform: rotate(90deg);
-    /*font-size: 16px;*/
+    /* font-size: 16px; */
     font-size: 13px;
 }
 .owl-dots {
@@ -368,6 +368,8 @@ h5.check-cost {
 	.navbar-collapse {
 	    color: #fff !important;
 	}
+
+
 }
 @media(max-width: 548px){
 	.home-carousel .item img {
@@ -386,4 +388,12 @@ h5.check-cost {
     .side-bar{
         position: fixed;
     }
+
+.footer .navbar-nav>li:first-child a {
+    padding-left: 0px;
+}
+
+.footer .nav li:nth-child(3) a {
+    padding-right: 0px;
+}
 }
