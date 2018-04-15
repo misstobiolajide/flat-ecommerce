@@ -1,11 +1,15 @@
 @font-face {
   font-family: 'arial';
-
   src: url('../fonts/arial.ttf');
 }
 
 body{
 	font-family: arial;
+	font-size: 13px;
+}
+
+h5 , h6 {
+	font-size: 13px;
 }
 
 .header{
@@ -219,7 +223,7 @@ section.footer {
 a.purchase-btn {
 background: #000;
     display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
     color: #fff;
     padding: 5px 20px;
     /* border-radius: 0px; */
@@ -230,12 +234,12 @@ background: #000;
     font-weight: 600;
 }
 .description h5 {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 .description p {
-    font-size: 16px;
+    font-size: 13px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -246,7 +250,7 @@ background: #000;
 
 .back a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13px;
     color: #000;
     display: inline-block;
     font-weight: 500;
@@ -371,7 +375,7 @@ h5.check-cost {
 }
 .checkout-area a.purchase-btn {
     margin: 20px 0px 0px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 
