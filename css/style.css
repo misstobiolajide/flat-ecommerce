@@ -149,6 +149,10 @@ section.footer {
     margin-top: 15%;
 }
 
+.about-area img {
+	max-width: 147px;
+}
+
 
 /*ABOUT PAGE ENDS*/
 
