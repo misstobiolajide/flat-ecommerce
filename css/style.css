@@ -327,6 +327,7 @@ background: #000;
     height: auto;
     margin: 10px 40px 10px 0px;
     max-height: 120px;
+    background-color: #e6e7e9;
 }
 .list-title {
     display: inline-block;
