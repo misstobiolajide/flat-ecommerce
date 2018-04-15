@@ -32,7 +32,7 @@ body{
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 13px;
     margin-top: 10px;
     letter-spacing: 6px;
     font-weight: bold;
@@ -44,37 +44,51 @@ body{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.home-carousel .item img {
-    width: 85%;
-    margin-left: 15px;
+.home-carousel .item {
+	position: relative;
 }
+.home-carousel .item .item-img {
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.home-carousel .item .item-img img{
+	width: 100%;
+}
+
 .slide-caption {
-    position: absolute;
-    top: 19%;
-    /* right: -60px; */
-    right: -30px;
-    transform: rotate(90deg);
-    /* font-size: 16px; */
-    font-size: 13px;
+    width: 100%;
+    background-color: red;
+}
+
+.slide-caption p {
+	position: absolute;
+	font-size: 13px;
+	top: 142px;
+	left: calc(50% + 10px);
+	text-align: left!important;
+	transform: rotate(90deg);
+	width: 100%
 }
 .owl-dots {
-    display: none;
+/*     display: none; */
 }
-.number-nav {
+.number-nav, .owl-dots {
     display: block;
-    width: 90%;
-    margin-top: 5px;
+/*     width: 90%; */
+    margin-top: 10px;
     text-align: center;
 }
-.number-nav a {
+.number-nav a , .owl-dot{
     display: inline-block;
     font-size: 13px;
     color: #000;
-    margin-right: 4px;
+    margin-right: 10px;
 	text-decoration: none;
 }
 /*.number-nav a:hover, .number-nav a.active, .number-nav a:focus{*/
-.number-nav a.active{
+.number-nav a.active, .owl-dot.active {
     font-weight: bold;
     text-decoration: none;
 	/*font-size: 15px;*/
@@ -90,6 +104,12 @@ transform: rotate(90deg) ;
 -ms-transform: rotate(90deg);
     top: 130px;
     font-size: 13px;
+}
+
+.copyright-footer-area {
+	position: absolute; 
+	top: 15px; 
+	left: 15px;
 }
 section.footer {
     position: fixed;
@@ -139,7 +159,7 @@ section.footer {
     margin-bottom: 50px;
     display: inline-block;
     width: auto;
-    margin-left: 20px;
+    padding-left: 20px;
 }
 .side-bar ul {
     list-style: none;
@@ -160,6 +180,10 @@ section.footer {
     margin-bottom: 30px;
     display: inline-block;
     width: 100%;
+}
+
+.item-main img {
+	background-color: #e6e7e9;
 }
 .shop a {
     text-decoration: none;
@@ -252,6 +276,11 @@ background: #000;
 
 .collection-thumb img {
     width: 100%;
+    background-color: #e6e7e9;
+}
+
+.collection-video-thumb img {
+	background-color: transparent;
 }
 
 
@@ -259,6 +288,7 @@ background: #000;
 
 .collection-view img {
     width: 100%;
+    background: #e6e7e9;
 }
 
 /*COLLECTION VIDEO VIEW*/
@@ -352,14 +382,23 @@ h5.check-cost {
     outline: none;
 }
 .product-gallery .owl-nav [class*=owl-]:hover {
-        background: transparent;
+    background: transparent;
     color: #e6e7e9;
     text-decoration: none;
 }
 
+.product-gallery .item img {
+	background-color: #e6e7e9;
+}
+
+.product-gallery .owl-nav img {
+	width: 50px;
+	padding: 0 10px;
+}
+
 
 /*MEDIA QUERIES*/
-@media (max-width: 768px){
+@media (max-width: 767px){
 	.navbar-collapse ul.nav li {
 	    float: left;
 	    text-align: left;
@@ -368,32 +407,52 @@ h5.check-cost {
 	.navbar-collapse {
 	    color: #fff !important;
 	}
-
+	.copyright-area {
+		display: none;
+	}
+	.shop-items .col-sm-4 {
+		padding: 0px;
+	}
+	
+	.shop-items .col-sm-4 img,
+	.collection-thumb {
+		width: 100%;
+		height: auto; 
+	}
+	
+	.collection-thumb  {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
 
 }
 @media(max-width: 548px){
 	.home-carousel .item img {
 	    width: 80%;
-	    margin-left: 10px;
-	}
-	.slide-caption {
-	    position: absolute;
-	    top: 27%;
-	    right: -60px;
-	    transform: rotate(90deg);
-	    font-size: 16px;
 	}
 }
-@media(min-width: 768px){
-    .side-bar{
+@media(max-width: 1023px){
+	.side-bar {
+		padding: 0px;
+		
+	}
+	
+}
+@media(min-width: 767px){
+    .side-bar > .side-bar__content{
         position: fixed;
     }
+    
+    .copyright-footer-area {
+	    display: none;
+    }
 
-.footer .navbar-nav>li:first-child a {
-    padding-left: 0px;
-}
-
-.footer .nav li:nth-child(3) a {
-    padding-right: 0px;
-}
+	.footer .navbar-nav>li:first-child a {
+	    padding-left: 0px;
+	}
+	
+	.footer .nav li:nth-child(3) a {
+	    padding-right: 0px;
+	}
 }

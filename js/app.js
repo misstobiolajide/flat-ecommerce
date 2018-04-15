@@ -25,6 +25,12 @@ $(document).ready(function(){
 			}
 		});
 	}
+	
+	//Carousel
+	$('.number-nav a').on('click' , function() {
+		$('.number-nav a').removeClass('active');
+		$(this).addClass('active');
+	});
 
 });
 
