@@ -52,7 +52,7 @@ h5 , h6 {
 	position: relative;
 }
 .home-carousel .item .item-img {
-    max-width: 300px;
+    max-width: 450px;
     margin: 0 auto;
     position: relative;
 }
@@ -150,7 +150,8 @@ section.footer {
 }
 
 .about-area img {
-	max-width: 147px;
+    max-width: 107px;
+    margin-top: 10px;
 }
 
 
@@ -172,7 +173,7 @@ section.footer {
 .side-bar ul {
     list-style: none;
     padding-left: 0;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -196,7 +197,7 @@ section.footer {
 .shop a {
     text-decoration: none;
     color: #000;
-    font-weight: 600;
+    font-weight: 400;
 }
 /*SHOP PAGE ENDS*/
 
@@ -215,9 +216,10 @@ section.footer {
 }
 
 .product-detail h5 {
-    font-size: 18px;
+    font-size: 13px;
     margin-bottom: 10px;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .stuff-size ul li a {
     color: #000;
@@ -225,11 +227,11 @@ section.footer {
 }
 
 a.purchase-btn {
-background: #000;
+    background: #000;
     display: inline-block;
     font-size: 13px;
     color: #fff;
-    padding: 5px 20px;
+    padding: 7px 20px;
     /* border-radius: 0px; */
     text-decoration: none;
     margin-bottom: 70px;
@@ -259,7 +261,6 @@ background: #000;
     display: inline-block;
     font-weight: 500;
     margin-left: 40px;
-    margin-top: 10px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -406,6 +407,11 @@ h5.check-cost {
 }
 
 
+.video_player_btns a{
+    margin-right: 10px;
+}
+
+
 /*MEDIA QUERIES*/
 @media (max-width: 767px){
 	.navbar-collapse ul.nav li {
@@ -449,6 +455,12 @@ h5.check-cost {
 	
 }
 @media(min-width: 767px){
+
+.navbar-nav>li>a {
+    padding-bottom: 10px;
+}
+
+.navbar {min-height: 45px;}
     .side-bar > .side-bar__content{
         position: fixed;
     }
